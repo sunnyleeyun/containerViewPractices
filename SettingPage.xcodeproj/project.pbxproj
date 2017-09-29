@@ -47,6 +47,13 @@
 		04E6F3391F7A3F9A0066573B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6F3381F7A3F990066573B /* MainViewController.swift */; };
 		04E6F33B1F7A3FCE0066573B /* Page1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6F33A1F7A3FCE0066573B /* Page1ViewController.swift */; };
 		04E6F33D1F7A3FD80066573B /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6F33C1F7A3FD80066573B /* Page2ViewController.swift */; };
+		04E9F2781F7E18E200F08304 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9F2771F7E18E200F08304 /* ShopViewController.swift */; };
+		04E9F27B1F7E25AA00F08304 /* Seller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9F2791F7E25AA00F08304 /* Seller.swift */; };
+		04E9F27C1F7E25AA00F08304 /* Seller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E9F27A1F7E25AA00F08304 /* Seller.xib */; };
+		04E9F27F1F7E27FD00F08304 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9F27D1F7E27FD00F08304 /* Product.swift */; };
+		04E9F2801F7E27FD00F08304 /* Product.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E9F27E1F7E27FD00F08304 /* Product.xib */; };
+		04E9F2831F7E287C00F08304 /* Shipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9F2811F7E287C00F08304 /* Shipment.swift */; };
+		04E9F2841F7E287C00F08304 /* Shipment.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E9F2821F7E287C00F08304 /* Shipment.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +99,13 @@
 		04E6F3381F7A3F990066573B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		04E6F33A1F7A3FCE0066573B /* Page1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1ViewController.swift; sourceTree = "<group>"; };
 		04E6F33C1F7A3FD80066573B /* Page2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
+		04E9F2771F7E18E200F08304 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		04E9F2791F7E25AA00F08304 /* Seller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seller.swift; sourceTree = "<group>"; };
+		04E9F27A1F7E25AA00F08304 /* Seller.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Seller.xib; sourceTree = "<group>"; };
+		04E9F27D1F7E27FD00F08304 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		04E9F27E1F7E27FD00F08304 /* Product.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Product.xib; sourceTree = "<group>"; };
+		04E9F2811F7E287C00F08304 /* Shipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shipment.swift; sourceTree = "<group>"; };
+		04E9F2821F7E287C00F08304 /* Shipment.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Shipment.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +203,7 @@
 		04E6F3211F7A0EA70066573B /* SettingPage */ = {
 			isa = PBXGroup;
 			children = (
+				04E9F2761F7E169C00F08304 /* Shop */,
 				04682E951F7BAF6B00D62670 /* extensions */,
 				04682EBD1F7CEFB200D62670 /* IGSetting */,
 				04682E5D1F7A559300D62670 /* FirstTry */,
@@ -200,6 +215,20 @@
 				04E6F3321F7A0EA70066573B /* Info.plist */,
 			);
 			path = SettingPage;
+			sourceTree = "<group>";
+		};
+		04E9F2761F7E169C00F08304 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				04E9F2771F7E18E200F08304 /* ShopViewController.swift */,
+				04E9F2791F7E25AA00F08304 /* Seller.swift */,
+				04E9F27A1F7E25AA00F08304 /* Seller.xib */,
+				04E9F27D1F7E27FD00F08304 /* Product.swift */,
+				04E9F27E1F7E27FD00F08304 /* Product.xib */,
+				04E9F2811F7E287C00F08304 /* Shipment.swift */,
+				04E9F2821F7E287C00F08304 /* Shipment.xib */,
+			);
+			path = Shop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,9 +293,12 @@
 				04682E941F7B8FAC00D62670 /* SmallPhotoCollectionViewCell.xib in Resources */,
 				04682E901F7B8ACE00D62670 /* TabCollectionViewCell.xib in Resources */,
 				04682EC11F7CF02700D62670 /* FullPhotoCollectionViewCell.xib in Resources */,
+				04E9F27C1F7E25AA00F08304 /* Seller.xib in Resources */,
 				04E6F3311F7A0EA70066573B /* LaunchScreen.storyboard in Resources */,
 				04E6F32E1F7A0EA70066573B /* Assets.xcassets in Resources */,
 				04E6F32C1F7A0EA70066573B /* Main.storyboard in Resources */,
+				04E9F2841F7E287C00F08304 /* Shipment.xib in Resources */,
+				04E9F2801F7E27FD00F08304 /* Product.xib in Resources */,
 				04682E8C1F7B847100D62670 /* AvatarCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +314,8 @@
 				04E6F3251F7A0EA70066573B /* RootViewController.swift in Sources */,
 				04682EB01F7BAF6B00D62670 /* Queue.swift in Sources */,
 				04682EAC1F7BAF6B00D62670 /* DateExtension.swift in Sources */,
+				04E9F2781F7E18E200F08304 /* ShopViewController.swift in Sources */,
+				04E9F27B1F7E25AA00F08304 /* Seller.swift in Sources */,
 				04E6F3291F7A0EA70066573B /* ModelController.swift in Sources */,
 				04682E881F7B814200D62670 /* IGPersonalSettingPageViewController.swift in Sources */,
 				04682EBB1F7BAF6C00D62670 /* UIViewExtension.swift in Sources */,
@@ -305,11 +339,13 @@
 				04682E931F7B8FAC00D62670 /* SmallPhotoCollectionViewCell.swift in Sources */,
 				04E6F3391F7A3F9A0066573B /* MainViewController.swift in Sources */,
 				04682EA91F7BAF6B00D62670 /* ArrayExtension.swift in Sources */,
+				04E9F27F1F7E27FD00F08304 /* Product.swift in Sources */,
 				04682EB11F7BAF6B00D62670 /* SDWebImageExtension.swift in Sources */,
 				04682EB71F7BAF6C00D62670 /* UIImageExtension.swift in Sources */,
 				04682EB31F7BAF6B00D62670 /* UIAlertControllerExtension.swift in Sources */,
 				04E6F33D1F7A3FD80066573B /* Page2ViewController.swift in Sources */,
 				04682E5C1F7A52A000D62670 /* EmptySegue.swift in Sources */,
+				04E9F2831F7E287C00F08304 /* Shipment.swift in Sources */,
 				04682EB21F7BAF6B00D62670 /* SwiftyJSONExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
