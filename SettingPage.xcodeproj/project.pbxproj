@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04555C611F7F533100CD719E /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04555C601F7F533000CD719E /* ShopModel.swift */; };
+		04555C631F7F6A6400CD719E /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04555C621F7F6A6400CD719E /* ShopViewModel.swift */; };
 		04682E5A1F7A494500D62670 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04682E591F7A494500D62670 /* ContainerViewController.swift */; };
 		04682E5C1F7A52A000D62670 /* EmptySegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04682E5B1F7A52A000D62670 /* EmptySegue.swift */; };
 		04682E881F7B814200D62670 /* IGPersonalSettingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04682E871F7B814200D62670 /* IGPersonalSettingPageViewController.swift */; };
@@ -57,6 +59,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04555C601F7F533000CD719E /* ShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopModel.swift; sourceTree = "<group>"; };
+		04555C621F7F6A6400CD719E /* ShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
 		04682E591F7A494500D62670 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		04682E5B1F7A52A000D62670 /* EmptySegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySegue.swift; sourceTree = "<group>"; };
 		04682E871F7B814200D62670 /* IGPersonalSettingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGPersonalSettingPageViewController.swift; sourceTree = "<group>"; };
@@ -221,6 +225,8 @@
 			isa = PBXGroup;
 			children = (
 				04E9F2771F7E18E200F08304 /* ShopViewController.swift */,
+				04555C601F7F533000CD719E /* ShopModel.swift */,
+				04555C621F7F6A6400CD719E /* ShopViewModel.swift */,
 				04E9F2791F7E25AA00F08304 /* Seller.swift */,
 				04E9F27A1F7E25AA00F08304 /* Seller.xib */,
 				04E9F27D1F7E27FD00F08304 /* Product.swift */,
@@ -323,12 +329,14 @@
 				04E6F3271F7A0EA70066573B /* DataViewController.swift in Sources */,
 				04682EAB1F7BAF6B00D62670 /* DataExtension.swift in Sources */,
 				04682EAA1F7BAF6B00D62670 /* CollectionExtension.swift in Sources */,
+				04555C611F7F533100CD719E /* ShopModel.swift in Sources */,
 				04682E8B1F7B847100D62670 /* AvatarCollectionViewCell.swift in Sources */,
 				04682EAD1F7BAF6B00D62670 /* DictionaryExtension.swift in Sources */,
 				04E6F33B1F7A3FCE0066573B /* Page1ViewController.swift in Sources */,
 				04682EB41F7BAF6C00D62670 /* UIApplicationExtension.swift in Sources */,
 				04682EAE1F7BAF6B00D62670 /* NSObejctExtension.swift in Sources */,
 				04682EB61F7BAF6C00D62670 /* UIColorExtension.swift in Sources */,
+				04555C631F7F6A6400CD719E /* ShopViewModel.swift in Sources */,
 				04E6F3231F7A0EA70066573B /* AppDelegate.swift in Sources */,
 				04682EB81F7BAF6C00D62670 /* UILabelExtension.swift in Sources */,
 				04682EBA1F7BAF6C00D62670 /* UIViewControllerExtension.swift in Sources */,

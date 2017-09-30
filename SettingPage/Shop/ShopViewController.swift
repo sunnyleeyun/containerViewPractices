@@ -74,9 +74,12 @@ public class ShopViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
+        tableView.rowHeight = 80.0
+        
         tableView.anchor(to: view)
         
     }
+    
     
     
     /*
@@ -121,6 +124,9 @@ extension ShopViewController: UITableViewDataSource{
             } else if indexPath.row == 1{
                 let cell = tableView.dequeueReusableCell(with: Product.self, for: indexPath)
                 return cell
+            } else if indexPath.row == 2{
+                let cell = tableView.dequeueReusableCell(with: Product.self, for: indexPath)
+                return cell
             } else {
                 let cell = tableView.dequeueReusableCell(with: Shipment.self, for: indexPath)
                 return cell
@@ -130,6 +136,9 @@ extension ShopViewController: UITableViewDataSource{
                 let cell = tableView.dequeueReusableCell(with: Seller.self, for: indexPath)
                 return cell
             } else if indexPath.row == 1{
+                let cell = tableView.dequeueReusableCell(with: Product.self, for: indexPath)
+                return cell
+            } else if indexPath.row == 2{
                 let cell = tableView.dequeueReusableCell(with: Product.self, for: indexPath)
                 return cell
             } else {
@@ -147,7 +156,20 @@ extension ShopViewController: UITableViewDataSource{
     
 }
 extension ShopViewController: UITableViewDelegate{
+    public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 40))
+        footerView.backgroundColor = UIColor.blue
+        return footerView
+    }
     
+    public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        
+        return 40
+    }
+    
+    public func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 40
+    }
 }
 
 
