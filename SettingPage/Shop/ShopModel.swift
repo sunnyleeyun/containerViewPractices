@@ -23,6 +23,8 @@ class ShopModel { //視Json資料調整
     init?(data: Data)
     {
         
+        // alamofire here?
+        
     }
     
 }
@@ -33,8 +35,8 @@ class ProductModel {
     var itemOption: String?
     
     init(json: [String: Any]) {
-        self.itemImageUrl = json[""] as? String
-        self.itemName = json[""] as? String
-        self.itemOption = json[""] as? String
+        self.itemImageUrl = json["itemImageUrl"] as? String
+        self.itemName = json["itemName"] as? String
+        self.itemOption = json["itemOption"] as? String
     }
 }

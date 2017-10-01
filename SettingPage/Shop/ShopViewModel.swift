@@ -8,12 +8,27 @@
 
 import Foundation
 
-protocol ViewModelItem {
-
-    var rowCount: Int { get }
-
+enum ShopViewModelItemType {
+    case Seller
+    case Product
+    case Shipment
 }
-class ShopViewModelItem: ViewModelItem {
+protocol ShopViewModelItem {
+    var type: ShopViewModelItemType { get }
+    var rowCount: Int { get }
+}
+
+class ShopViewModel: NSObject{
+    var items = [ShopViewModelItem]()
+    
+    override init() {
+        super.init()
+        
+        
+    }
+}
+/*
+class ShopMainViewModelItem: ShopViewModelItem {
 
     // 0
     var storeLogoUrl: String
@@ -37,8 +52,31 @@ class ShopViewModelItem: ViewModelItem {
         self.shipmentDetail = shipmentDetail
     }
 }
+ */
+class ShopSellerViewModelItem: ShopViewModelItem { // row 0
+    
+    var type: ShopViewModelItemType {
+        return .Seller
+    }
+    
+    var storeLogoUrl: String
+    var storeName: String
+    
+    init(storeLogoUrl: String, storeName: String)
+    {
+        self.storeLogoUrl = storeLogoUrl
+        self.storeName = storeName
+    }
+}
 
-class ShopProductViewModelItem: ViewModelItem{
+
+
+class ShopProductViewModelItem: ShopViewModelItem{ // row 1
+    
+    var type: ShopViewModelItemType {
+        return .Product
+    }
+    
     var products: [ProductModel]
     var rowCount: Int {
         return products.count
@@ -51,11 +89,29 @@ class ShopProductViewModelItem: ViewModelItem{
     
 }
 
+class ShopShipmentViewModelItem: ShopViewModelItem { // row 2
+    
+    var type: ShopViewModelItemType {
+        return .Shipment
+    }
+    
+    var shipmentDetail: String
+    
+    init(shipmentDetail: String)
+    {
+        self.shipmentDetail = shipmentDetail
+    }
+}
 
-extension ShopViewModelItem {
+
+extension ShopSellerViewModelItem {
     var rowCount: Int {
         return 1
     }
 }
 
-
+extension ShopShipmentViewModelItem {
+    var rowCount: Int {
+        return 1
+    }
+}
