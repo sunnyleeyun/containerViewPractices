@@ -43,6 +43,9 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="shipmentDetailLabel" destination="Qfi-Dj-c4D" id="rgs-dm-0jb"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

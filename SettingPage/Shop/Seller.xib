@@ -46,6 +46,11 @@
                     <constraint firstItem="dJD-jv-4yr" firstAttribute="leading" secondItem="VYA-cD-aAD" secondAttribute="trailing" constant="8" symbolic="YES" id="wLk-S7-TI0"/>
                     <constraint firstItem="nbC-GI-yDV" firstAttribute="top" secondItem="VYA-cD-aAD" secondAttribute="top" id="wyt-T7-Ga9"/>
                 </constraints>
+                <connections>
+                    <outlet property="checkButton" destination="nbC-GI-yDV" id="lAh-gG-zE6"/>
+                    <outlet property="storeImageView" destination="VYA-cD-aAD" id="Dg7-f2-KLu"/>
+                    <outlet property="storeNameLabel" destination="dJD-jv-4yr" id="lpP-Mh-MQt"/>
+                </connections>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <point key="canvasLocation" x="-65" y="-146"/>

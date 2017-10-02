@@ -9,7 +9,17 @@
 import UIKit
 
 class Shipment: UITableViewCell {
-
+    
+    @IBOutlet public weak var shipmentDetailLabel: UILabel?
+    
+    var item: ShopViewModelItem?{
+        didSet{
+            guard let item = item as? ShopShipmentViewModelItem else { return }
+            shipmentDetailLabel?.text = item.shipmentDetail
+            
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

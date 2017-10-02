@@ -21,38 +21,14 @@ protocol ShopViewModelItem {
 class ShopViewModel: NSObject{
     var items = [ShopViewModelItem]()
     
+    // ???
+    
     override init() {
         super.init()
         
-        
     }
 }
-/*
-class ShopMainViewModelItem: ShopViewModelItem {
 
-    // 0
-    var storeLogoUrl: String
-    var storeName: String
-    
-    //1
-    var itemImageUrl: String
-    var itemName: String
-    var itemOption: String
-    
-    //2
-    var shipmentDetail: String
-    
-    
-    init(storeLogoUrl: String, storeName: String, itemImageUrl: String, itemName: String, itemOption: String, shipmentDetail: String) {
-        self.storeLogoUrl = storeLogoUrl
-        self.storeName = storeName
-        self.itemImageUrl = itemImageUrl
-        self.itemName = itemName
-        self.itemOption = itemOption
-        self.shipmentDetail = shipmentDetail
-    }
-}
- */
 class ShopSellerViewModelItem: ShopViewModelItem { // row 0
     
     var type: ShopViewModelItemType {
@@ -115,3 +91,32 @@ extension ShopShipmentViewModelItem {
         return 1
     }
 }
+
+
+
+/*
+ class ShopMainViewModelItem: ShopViewModelItem {
+ 
+ // 0
+ var storeLogoUrl: String
+ var storeName: String
+ 
+ //1
+ var itemImageUrl: String
+ var itemName: String
+ var itemOption: String
+ 
+ //2
+ var shipmentDetail: String
+ 
+ 
+ init(storeLogoUrl: String, storeName: String, itemImageUrl: String, itemName: String, itemOption: String, shipmentDetail: String) {
+ self.storeLogoUrl = storeLogoUrl
+ self.storeName = storeName
+ self.itemImageUrl = itemImageUrl
+ self.itemName = itemName
+ self.itemOption = itemOption
+ self.shipmentDetail = shipmentDetail
+ }
+ }
+ */

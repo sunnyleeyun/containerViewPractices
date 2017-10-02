@@ -9,7 +9,21 @@
 import UIKit
 
 class Product: UITableViewCell {
+    
+    @IBOutlet public weak var checkButton: UIButton?
+    @IBOutlet public weak var productImageView: UIImageView?
+    @IBOutlet public weak var productNameLabel: UILabel?
+    @IBOutlet public weak var productDetailLabel: UILabel?
 
+    var item: ProductModel?{
+        didSet{
+            guard let item = item else { return }
+            productImageView?.image = UIImage(named: item.itemImageUrl!)
+            productNameLabel?.text = item.itemName
+            productDetailLabel?.text = item.itemOption
+
+        }
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
