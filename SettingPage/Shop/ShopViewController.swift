@@ -11,23 +11,21 @@ import UIKit
 public class ShopViewController: UIViewController {
     
 //    struct ShopCartList {
-//        private var list: [ShopContent]
+//        var list: [ShopContent]
 //    }
     
     
-    private struct ShopContent { // what include within 1 section
-        let seller: Seller
-        let products: [Product]
-        let shipment: Shipment
-    }
+//    struct ShopContent { // what include within 1 section
+//        let seller: Seller
+//        let products: [Product]
+//        let shipment: Shipment
+//    }
     
-    private var sections = [ShopContent]()
+    private var viewModel = [ShopViewModel]()
 
     private var tableView: UITableView!
     
-    public var sectionCount: Int{
-        return 2
-    }
+    
     
     public enum ShopSettingSection: Int{ // how many sections
         case aa = 0
@@ -97,13 +95,14 @@ extension ShopViewController: UITableViewDataSource{
     
     
     public func numberOfSections(in tableView: UITableView) -> Int {
-        return sectionCount
+        return viewModel.count
     }
     
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 4
+        
+        return section.rowCount
 //        switch section {
 //        case ShopSettingSection.aa.rawValue:
 //            return 1
@@ -117,6 +116,7 @@ extension ShopViewController: UITableViewDataSource{
     }
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.section {
+            
         case ShopSettingSection.aa.rawValue:
             if indexPath.row == 0{
                 let cell = tableView.dequeueReusableCell(with: Seller.self, for: indexPath)

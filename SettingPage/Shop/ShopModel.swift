@@ -9,21 +9,43 @@
 import Foundation
 import UIKit
 
-class ShopModel { //視Json資料調整
+struct ShopModel { //視Json資料調整
+    /*
+    let seller: Seller
+    let products: [Product]
+    let shipment: Shipment
+ */
     // 0
     var storeLogoUrl: String?
     var storeName: String?
     
     //1
-    var product = [ProductModel]()
+    var products = [ProductModel]()
     
     //2
     var shipmentDetail: String?
     
     init?(data: Data)
     {
-        
         // alamofire here?
+        
+        do {
+            if let json = try JSONSerialization.jsonObject(with: data) as? [String: Any], let body = json["data"] as? [String: Any] {
+                self.storeLogoUrl = body["storeLogoUrl"] as? String
+                self.storeName = body["storeName"] as? String
+                
+                if let products = body["products"] as? [[String: Any]] {
+                    self.products = products.map { ProductModel(json: $0) }
+                }
+                
+                self.shipmentDetail = body["shipmentDetail"] as? String
+
+                
+            }
+        } catch {
+            print("Error deserializing JSON: \(error)")
+            return nil
+        }
         
     }
     
