@@ -102,7 +102,7 @@ extension ShopViewController: UITableViewDataSource{
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         
-        return section.rowCount
+        return 4
 //        switch section {
 //        case ShopSettingSection.aa.rawValue:
 //            return 1

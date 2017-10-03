@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Product: UITableViewCell {
+class ProductTableViewCell: UITableViewCell {
     
     @IBOutlet public weak var checkButton: UIButton?
     @IBOutlet public weak var productImageView: UIImageView?

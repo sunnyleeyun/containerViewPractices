@@ -1,5 +1,5 @@
 //
-//  Shipment.swift
+//  ShopTableViewCell.swift
 //  SettingPage
 //
 //  Created by Mac on 2017/9/29.
@@ -8,14 +8,17 @@
 
 import UIKit
 
-class Shipment: UITableViewCell {
-    
-    @IBOutlet public weak var shipmentDetailLabel: UILabel?
-    
+class SellerTableViewCell: UITableViewCell {
+
+    @IBOutlet public weak var checkButton: UIButton?
+    @IBOutlet public weak var storeImageView: UIImageView?
+    @IBOutlet public weak var storeNameLabel: UILabel?
+
     var item: ShopViewModelItem?{
         didSet{
-            guard let item = item as? ShopShipmentViewModelItem else { return }
-            shipmentDetailLabel?.text = item.shipmentDetail
+            guard let item = item as? ShopSellerViewModelItem else { return }
+            storeImageView?.image = UIImage(named: item.storeLogoUrl)
+            storeNameLabel?.text = item.storeName
             
         }
     }
