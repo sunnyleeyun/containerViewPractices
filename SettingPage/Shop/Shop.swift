@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 struct ShopCartList {
-    var list: [ShopModel]
+    var list: [Shop]
 }
 struct Shop {
     let seller: Seller
@@ -20,15 +20,15 @@ struct Shop {
 
 struct Seller {
     //0
-    var storeLogoUrl: String
-    var storeName: String
+    let storeLogoUrl: String
+    let storeName: String
 }
 struct Product {
     //1
-    var itemImageUrl: String
-    var itemName: String
-    var itemOption: String
+    let itemImageUrl: String
+    let itemName: String
+    let itemOption: String
 }
 struct Shipment {
-    var shipmentDetail: String
+    let shipmentDetail: String
 }

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04555C611F7F533100CD719E /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04555C601F7F533000CD719E /* ShopModel.swift */; };
+		04555C611F7F533100CD719E /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04555C601F7F533000CD719E /* Shop.swift */; };
 		04555C631F7F6A6400CD719E /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04555C621F7F6A6400CD719E /* ShopViewModel.swift */; };
 		04682E5A1F7A494500D62670 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04682E591F7A494500D62670 /* ContainerViewController.swift */; };
 		04682E5C1F7A52A000D62670 /* EmptySegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04682E5B1F7A52A000D62670 /* EmptySegue.swift */; };
@@ -39,6 +39,7 @@
 		04682EBB1F7BAF6C00D62670 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04682EA81F7BAF6B00D62670 /* UIViewExtension.swift */; };
 		04682EC01F7CF02700D62670 /* FullPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04682EBE1F7CF02700D62670 /* FullPhotoCollectionViewCell.swift */; };
 		04682EC11F7CF02700D62670 /* FullPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04682EBF1F7CF02700D62670 /* FullPhotoCollectionViewCell.xib */; };
+		04B4B9481F83455600023A7D /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B4B9471F83455600023A7D /* LogIn.swift */; };
 		04E6F3231F7A0EA70066573B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6F3221F7A0EA70066573B /* AppDelegate.swift */; };
 		04E6F3251F7A0EA70066573B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6F3241F7A0EA70066573B /* RootViewController.swift */; };
 		04E6F3271F7A0EA70066573B /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6F3261F7A0EA70066573B /* DataViewController.swift */; };
@@ -59,7 +60,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04555C601F7F533000CD719E /* ShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopModel.swift; sourceTree = "<group>"; };
+		04555C601F7F533000CD719E /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		04555C621F7F6A6400CD719E /* ShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
 		04682E591F7A494500D62670 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		04682E5B1F7A52A000D62670 /* EmptySegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySegue.swift; sourceTree = "<group>"; };
@@ -91,6 +92,7 @@
 		04682EA81F7BAF6B00D62670 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		04682EBE1F7CF02700D62670 /* FullPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		04682EBF1F7CF02700D62670 /* FullPhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FullPhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		04B4B9471F83455600023A7D /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
 		04E6F31F1F7A0EA70066573B /* SettingPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SettingPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E6F3221F7A0EA70066573B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04E6F3241F7A0EA70066573B /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 		04B4B9461F83426E00023A7D /* LogIn */ = {
 			isa = PBXGroup;
 			children = (
+				04B4B9471F83455600023A7D /* LogIn.swift */,
 			);
 			path = LogIn;
 			sourceTree = "<group>";
@@ -233,7 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				04E9F2771F7E18E200F08304 /* ShopViewController.swift */,
-				04555C601F7F533000CD719E /* ShopModel.swift */,
+				04555C601F7F533000CD719E /* Shop.swift */,
 				04555C621F7F6A6400CD719E /* ShopViewModel.swift */,
 				04E9F2791F7E25AA00F08304 /* SellerTableViewCell.swift */,
 				04E9F27A1F7E25AA00F08304 /* SellerTableViewCell.xib */,
@@ -337,8 +340,9 @@
 				04E6F3271F7A0EA70066573B /* DataViewController.swift in Sources */,
 				04682EAB1F7BAF6B00D62670 /* DataExtension.swift in Sources */,
 				04682EAA1F7BAF6B00D62670 /* CollectionExtension.swift in Sources */,
-				04555C611F7F533100CD719E /* ShopModel.swift in Sources */,
+				04555C611F7F533100CD719E /* Shop.swift in Sources */,
 				04682E8B1F7B847100D62670 /* AvatarCollectionViewCell.swift in Sources */,
+				04B4B9481F83455600023A7D /* LogIn.swift in Sources */,
 				04682EAD1F7BAF6B00D62670 /* DictionaryExtension.swift in Sources */,
 				04E6F33B1F7A3FCE0066573B /* Page1ViewController.swift in Sources */,
 				04682EB41F7BAF6C00D62670 /* UIApplicationExtension.swift in Sources */,

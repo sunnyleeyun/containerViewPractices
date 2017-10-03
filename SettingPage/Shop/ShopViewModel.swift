@@ -53,12 +53,12 @@ class ShopProductViewModelItem: ShopViewModelItem{ // row 1
         return .Product
     }
     
-    var products: [ProductModel]
+    var products: [Product]
     var rowCount: Int {
         return products.count
     }
     
-    init(products: [ProductModel]) {
+    init(products: [Product]) {
         self.products = products
     }
 

@@ -67,7 +67,7 @@ public class ShopViewController: UIViewController {
         
         
         // register
-        tableView.register(cellTypes: [Seller.self, Product.self, Shipment.self])
+        tableView.register(cellTypes: [SellerTableViewCell.self, ProductTableViewCell.self, ShipmentTableViewCell.self])
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -119,30 +119,30 @@ extension ShopViewController: UITableViewDataSource{
             
         case ShopSettingSection.aa.rawValue:
             if indexPath.row == 0{
-                let cell = tableView.dequeueReusableCell(with: Seller.self, for: indexPath)
+                let cell = tableView.dequeueReusableCell(with: SellerTableViewCell.self, for: indexPath)
                 return cell
             } else if indexPath.row == 1{
-                let cell = tableView.dequeueReusableCell(with: Product.self, for: indexPath)
+                let cell = tableView.dequeueReusableCell(with: ProductTableViewCell.self, for: indexPath)
                 return cell
             } else if indexPath.row == 2{
-                let cell = tableView.dequeueReusableCell(with: Product.self, for: indexPath)
+                let cell = tableView.dequeueReusableCell(with: ProductTableViewCell.self, for: indexPath)
                 return cell
             } else {
-                let cell = tableView.dequeueReusableCell(with: Shipment.self, for: indexPath)
+                let cell = tableView.dequeueReusableCell(with: ShipmentTableViewCell.self, for: indexPath)
                 return cell
             }
         case ShopSettingSection.bb.rawValue:
             if indexPath.row == 0{
-                let cell = tableView.dequeueReusableCell(with: Seller.self, for: indexPath)
+                let cell = tableView.dequeueReusableCell(with: SellerTableViewCell.self, for: indexPath)
                 return cell
             } else if indexPath.row == 1{
-                let cell = tableView.dequeueReusableCell(with: Product.self, for: indexPath)
+                let cell = tableView.dequeueReusableCell(with: ProductTableViewCell.self, for: indexPath)
                 return cell
             } else if indexPath.row == 2{
-                let cell = tableView.dequeueReusableCell(with: Product.self, for: indexPath)
+                let cell = tableView.dequeueReusableCell(with: ProductTableViewCell.self, for: indexPath)
                 return cell
             } else {
-                let cell = tableView.dequeueReusableCell(with: Shipment.self, for: indexPath)
+                let cell = tableView.dequeueReusableCell(with: ShipmentTableViewCell.self, for: indexPath)
                 return cell
             }
             
