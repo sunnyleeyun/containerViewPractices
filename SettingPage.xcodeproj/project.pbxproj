@@ -40,6 +40,7 @@
 		04682EC01F7CF02700D62670 /* FullPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04682EBE1F7CF02700D62670 /* FullPhotoCollectionViewCell.swift */; };
 		04682EC11F7CF02700D62670 /* FullPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04682EBF1F7CF02700D62670 /* FullPhotoCollectionViewCell.xib */; };
 		04B4B9481F83455600023A7D /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B4B9471F83455600023A7D /* LogIn.swift */; };
+		04B4B94A1F834DBB00023A7D /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B4B9491F834DBB00023A7D /* LogInViewController.swift */; };
 		04E6F3231F7A0EA70066573B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6F3221F7A0EA70066573B /* AppDelegate.swift */; };
 		04E6F3251F7A0EA70066573B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6F3241F7A0EA70066573B /* RootViewController.swift */; };
 		04E6F3271F7A0EA70066573B /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6F3261F7A0EA70066573B /* DataViewController.swift */; };
@@ -93,6 +94,7 @@
 		04682EBE1F7CF02700D62670 /* FullPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		04682EBF1F7CF02700D62670 /* FullPhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FullPhotoCollectionViewCell.xib; sourceTree = "<group>"; };
 		04B4B9471F83455600023A7D /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
+		04B4B9491F834DBB00023A7D /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		04E6F31F1F7A0EA70066573B /* SettingPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SettingPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E6F3221F7A0EA70066573B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04E6F3241F7A0EA70066573B /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 		04B4B9461F83426E00023A7D /* LogIn */ = {
 			isa = PBXGroup;
 			children = (
+				04B4B9491F834DBB00023A7D /* LogInViewController.swift */,
 				04B4B9471F83455600023A7D /* LogIn.swift */,
 			);
 			path = LogIn;
@@ -348,6 +351,7 @@
 				04682EB41F7BAF6C00D62670 /* UIApplicationExtension.swift in Sources */,
 				04682EAE1F7BAF6B00D62670 /* NSObejctExtension.swift in Sources */,
 				04682EB61F7BAF6C00D62670 /* UIColorExtension.swift in Sources */,
+				04B4B94A1F834DBB00023A7D /* LogInViewController.swift in Sources */,
 				04555C631F7F6A6400CD719E /* ShopViewModel.swift in Sources */,
 				04E6F3231F7A0EA70066573B /* AppDelegate.swift in Sources */,
 				04682EB81F7BAF6C00D62670 /* UILabelExtension.swift in Sources */,

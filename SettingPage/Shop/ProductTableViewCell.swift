@@ -15,15 +15,15 @@ class ProductTableViewCell: UITableViewCell {
     @IBOutlet public weak var productNameLabel: UILabel?
     @IBOutlet public weak var productDetailLabel: UILabel?
 
-    var item: ProductModel?{
-        didSet{
-            guard let item = item else { return }
-            productImageView?.image = UIImage(named: item.itemImageUrl!)
-            productNameLabel?.text = item.itemName
-            productDetailLabel?.text = item.itemOption
-
-        }
-    }
+//    var item: Product?{
+//        didSet{
+//            guard let item = item else { return }
+//            productImageView?.image = UIImage(named: item.itemImageUrl!)
+//            productNameLabel?.text = item.itemName
+//            productDetailLabel?.text = item.itemOption
+//
+//        }
+//    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
