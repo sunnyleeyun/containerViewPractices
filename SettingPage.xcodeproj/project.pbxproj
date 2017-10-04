@@ -39,8 +39,8 @@
 		04682EBB1F7BAF6C00D62670 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04682EA81F7BAF6B00D62670 /* UIViewExtension.swift */; };
 		04682EC01F7CF02700D62670 /* FullPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04682EBE1F7CF02700D62670 /* FullPhotoCollectionViewCell.swift */; };
 		04682EC11F7CF02700D62670 /* FullPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04682EBF1F7CF02700D62670 /* FullPhotoCollectionViewCell.xib */; };
-		04B4B9481F83455600023A7D /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B4B9471F83455600023A7D /* LogIn.swift */; };
 		04B4B94A1F834DBB00023A7D /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B4B9491F834DBB00023A7D /* LogInViewController.swift */; };
+		04B4B94C1F8386D000023A7D /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B4B94B1F8386D000023A7D /* LogInViewModel.swift */; };
 		04E6F3231F7A0EA70066573B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6F3221F7A0EA70066573B /* AppDelegate.swift */; };
 		04E6F3251F7A0EA70066573B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6F3241F7A0EA70066573B /* RootViewController.swift */; };
 		04E6F3271F7A0EA70066573B /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6F3261F7A0EA70066573B /* DataViewController.swift */; };
@@ -93,8 +93,8 @@
 		04682EA81F7BAF6B00D62670 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		04682EBE1F7CF02700D62670 /* FullPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		04682EBF1F7CF02700D62670 /* FullPhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FullPhotoCollectionViewCell.xib; sourceTree = "<group>"; };
-		04B4B9471F83455600023A7D /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
 		04B4B9491F834DBB00023A7D /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		04B4B94B1F8386D000023A7D /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
 		04E6F31F1F7A0EA70066573B /* SettingPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SettingPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E6F3221F7A0EA70066573B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04E6F3241F7A0EA70066573B /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -196,7 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				04B4B9491F834DBB00023A7D /* LogInViewController.swift */,
-				04B4B9471F83455600023A7D /* LogIn.swift */,
+				04B4B94B1F8386D000023A7D /* LogInViewModel.swift */,
 			);
 			path = LogIn;
 			sourceTree = "<group>";
@@ -345,7 +345,6 @@
 				04682EAA1F7BAF6B00D62670 /* CollectionExtension.swift in Sources */,
 				04555C611F7F533100CD719E /* Shop.swift in Sources */,
 				04682E8B1F7B847100D62670 /* AvatarCollectionViewCell.swift in Sources */,
-				04B4B9481F83455600023A7D /* LogIn.swift in Sources */,
 				04682EAD1F7BAF6B00D62670 /* DictionaryExtension.swift in Sources */,
 				04E6F33B1F7A3FCE0066573B /* Page1ViewController.swift in Sources */,
 				04682EB41F7BAF6C00D62670 /* UIApplicationExtension.swift in Sources */,
@@ -358,6 +357,7 @@
 				04682EBA1F7BAF6C00D62670 /* UIViewControllerExtension.swift in Sources */,
 				04682EC01F7CF02700D62670 /* FullPhotoCollectionViewCell.swift in Sources */,
 				04682E8F1F7B8ACE00D62670 /* TabCollectionViewCell.swift in Sources */,
+				04B4B94C1F8386D000023A7D /* LogInViewModel.swift in Sources */,
 				04682EB51F7BAF6C00D62670 /* UICollectionViewExtension.swift in Sources */,
 				04682EAF1F7BAF6B00D62670 /* NumberExtension.swift in Sources */,
 				04682E931F7B8FAC00D62670 /* SmallPhotoCollectionViewCell.swift in Sources */,
