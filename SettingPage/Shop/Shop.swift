@@ -9,10 +9,11 @@
 import Foundation
 import UIKit
 
-struct ShopCartList {
+public struct ShopCartList {
     var list: [Shop]
 }
-struct Shop {
+
+public struct Shop {
     let seller: Seller
     let products = [Product]()
     let shipment: Shipment

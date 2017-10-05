@@ -8,88 +8,93 @@
 
 import Foundation
 
+
+
+
+
+
 enum ShopViewModelItemType {
-    case Seller
-    case Product
-    case Shipment
+  case Seller
+  case Product
+  case Shipment
 }
 protocol ShopViewModelItem {
-    var type: ShopViewModelItemType { get }
-    var rowCount: Int { get }
+  var type: ShopViewModelItemType { get }
+  var rowCount: Int { get }
 }
 
 class ShopViewModel: NSObject{
-    var items = [ShopViewModelItem]()
+  var items = [ShopViewModelItem]()
+  
+  // ???
+  
+  override init() {
+    super.init()
     
-    // ???
-    
-    override init() {
-        super.init()
-        
-    }
+  }
 }
 
 class ShopSellerViewModelItem: ShopViewModelItem { // row 0
-    
-    var type: ShopViewModelItemType {
-        return .Seller
-    }
-    
-    var storeLogoUrl: String
-    var storeName: String
-    
-    init(storeLogoUrl: String, storeName: String)
-    {
-        self.storeLogoUrl = storeLogoUrl
-        self.storeName = storeName
-    }
+  
+  var type: ShopViewModelItemType {
+    return .Seller
+  }
+  
+  var storeLogoUrl: String
+  var storeName: String
+  
+  init(storeLogoUrl: String, storeName: String)
+  {
+    self.storeLogoUrl = storeLogoUrl
+    self.storeName = storeName
+  }
 }
 
 
 
 class ShopProductViewModelItem: ShopViewModelItem{ // row 1
-    
-    var type: ShopViewModelItemType {
-        return .Product
-    }
-    
-    var products: [Product]
-    var rowCount: Int {
-        return products.count
-    }
-    
-    init(products: [Product]) {
-        self.products = products
-    }
-
-    
+  
+  var type: ShopViewModelItemType {
+    return .Product
+  }
+  
+  var products: [Product]
+  var rowCount: Int {
+    return products.count
+  }
+  
+  init(products: [Product]) {
+    self.products = products
+  }
+  
+  
 }
 
 class ShopShipmentViewModelItem: ShopViewModelItem { // row 2
-    
-    var type: ShopViewModelItemType {
-        return .Shipment
-    }
-    
-    var shipmentDetail: String
-    
-    init(shipmentDetail: String)
-    {
-        self.shipmentDetail = shipmentDetail
-    }
+  
+  var type: ShopViewModelItemType {
+    return .Shipment
+  }
+  
+  var shipmentDetail: String
+  
+  init(shipmentDetail: String)
+  {
+    self.shipmentDetail = shipmentDetail
+  }
 }
 
 
 extension ShopSellerViewModelItem {
-    var rowCount: Int {
-        return 1
-    }
+  var rowCount: Int {
+    return 1
+  }
 }
 
 extension ShopShipmentViewModelItem {
-    var rowCount: Int {
-        return 1
-    }
+  var rowCount: Int {
+    return 1
+  }
 }
 
 

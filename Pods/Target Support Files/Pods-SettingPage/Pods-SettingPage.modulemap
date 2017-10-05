@@ -1,0 +1,6 @@
+framework module Pods_SettingPage {
+  umbrella header "Pods-SettingPage-umbrella.h"
+
+  export *
+  module * { export * }
+}

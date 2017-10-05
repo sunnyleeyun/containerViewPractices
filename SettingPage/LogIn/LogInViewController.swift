@@ -8,12 +8,10 @@
 
 import UIKit
 
-public class LogInViewController: UIViewController, LogInViewModelDelegate, UITextFieldDelegate {
+public class LogInViewController: UIViewController, UITextFieldDelegate {
 
     var model: LogInViewModel!
-    
-    
-    
+  
     public override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,21 +21,12 @@ public class LogInViewController: UIViewController, LogInViewModelDelegate, UITe
         view.backgroundColor = .init(hexString: "2A2846")//C15062
         configureUI()
         
-        // Do any additional setup after loading the view.
     }
 
     public override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    public func showInvalidation(){
-        // Alert
-        print("Account is not valid.")
-    }
-    
-    public func logInDone() {
-        print("Successful or whatever")
-    }
+  
     
     @objc func LogInPressed(_ sender: AnyObject){
         
@@ -84,7 +73,7 @@ public class LogInViewController: UIViewController, LogInViewModelDelegate, UITe
     lazy var logIn: UIButton! = {
         let view = UIButton()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.addTarget(self, action: #selector(LogInViewController.LogInPressed(_:)), for: .touchUpInside)
+        view.addTarget(self, action: #selector(LogInPressed(_:)), for: .touchUpInside)
         view.setTitle("Press Me!", for: .normal)
         view.backgroundColor = UIColor.blue
         return view
@@ -205,4 +194,15 @@ public class LogInViewController: UIViewController, LogInViewModelDelegate, UITe
             .isActive = true
     }
 
+}
+
+// MARK: - LogInViewModelDelegate
+extension LogInViewController: LogInViewModelDelegate{
+  public func showInvalidation(){
+    print("Account is not valid.")
+  }
+  
+  public func logInDone() {
+    print("Successful or whatever")
+  }
 }
