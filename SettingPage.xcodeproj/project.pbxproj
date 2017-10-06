@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043D77441F86339300872028 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D77431F86339300872028 /* DetailViewController.swift */; };
+		043D774A1F863FBF00872028 /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D77491F863FBF00872028 /* CustomTabBarViewController.swift */; };
 		04555C611F7F533100CD719E /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04555C601F7F533000CD719E /* Shop.swift */; };
 		04555C631F7F6A6400CD719E /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04555C621F7F6A6400CD719E /* ShopViewModel.swift */; };
 		04682E5A1F7A494500D62670 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04682E591F7A494500D62670 /* ContainerViewController.swift */; };
@@ -62,6 +64,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		043D77431F86339300872028 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		043D77491F863FBF00872028 /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
 		04555C601F7F533000CD719E /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		04555C621F7F6A6400CD719E /* ShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
 		04682E591F7A494500D62670 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
@@ -132,11 +136,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		043D77421F8620A000872028 /* Main */ = {
+		043D77421F8620A000872028 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				043D77431F86339300872028 /* DetailViewController.swift */,
 			);
-			name = Main;
+			name = Detail;
 			path = "New Group";
 			sourceTree = "<group>";
 		};
@@ -235,7 +240,7 @@
 		04E6F3211F7A0EA70066573B /* SettingPage */ = {
 			isa = PBXGroup;
 			children = (
-				043D77421F8620A000872028 /* Main */,
+				043D77421F8620A000872028 /* Detail */,
 				04B4B9461F83426E00023A7D /* LogIn */,
 				04E9F2761F7E169C00F08304 /* Shop */,
 				04682E951F7BAF6B00D62670 /* extensions */,
@@ -247,6 +252,7 @@
 				04E6F32D1F7A0EA70066573B /* Assets.xcassets */,
 				04E6F32F1F7A0EA70066573B /* LaunchScreen.storyboard */,
 				04E6F3321F7A0EA70066573B /* Info.plist */,
+				043D77491F863FBF00872028 /* CustomTabBarViewController.swift */,
 			);
 			path = SettingPage;
 			sourceTree = "<group>";
@@ -437,10 +443,12 @@
 				04682E8B1F7B847100D62670 /* AvatarCollectionViewCell.swift in Sources */,
 				04682EAD1F7BAF6B00D62670 /* DictionaryExtension.swift in Sources */,
 				04E6F33B1F7A3FCE0066573B /* Page1ViewController.swift in Sources */,
+				043D774A1F863FBF00872028 /* CustomTabBarViewController.swift in Sources */,
 				04682EB41F7BAF6C00D62670 /* UIApplicationExtension.swift in Sources */,
 				04682EAE1F7BAF6B00D62670 /* NSObejctExtension.swift in Sources */,
 				04682EB61F7BAF6C00D62670 /* UIColorExtension.swift in Sources */,
 				04B4B94A1F834DBB00023A7D /* LogInViewController.swift in Sources */,
+				043D77441F86339300872028 /* DetailViewController.swift in Sources */,
 				04555C631F7F6A6400CD719E /* ShopViewModel.swift in Sources */,
 				04E6F3231F7A0EA70066573B /* AppDelegate.swift in Sources */,
 				04682EB81F7BAF6C00D62670 /* UILabelExtension.swift in Sources */,
