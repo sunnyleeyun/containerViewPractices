@@ -12,7 +12,10 @@ import SnapKit
 class DetailViewController: UIViewController {
   
   private var tableView: UITableView!
-
+  public enum section{
+    
+  }
+  
   lazy var box = UIView()
   
   override func viewDidLoad() {

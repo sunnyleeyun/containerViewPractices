@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		043D77441F86339300872028 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D77431F86339300872028 /* DetailViewController.swift */; };
 		043D774A1F863FBF00872028 /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D77491F863FBF00872028 /* CustomTabBarViewController.swift */; };
+		043D774D1F87B3FB00872028 /* ProductPictureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D774B1F87B3FB00872028 /* ProductPictureTableViewCell.swift */; };
+		043D774E1F87B3FB00872028 /* ProductPictureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043D774C1F87B3FB00872028 /* ProductPictureTableViewCell.xib */; };
+		043D77511F87B42B00872028 /* ProductDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D774F1F87B42B00872028 /* ProductDetailsTableViewCell.swift */; };
+		043D77521F87B42B00872028 /* ProductDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043D77501F87B42B00872028 /* ProductDetailsTableViewCell.xib */; };
+		043D77551F87B90700872028 /* SizeRateFitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D77531F87B90700872028 /* SizeRateFitTableViewCell.swift */; };
+		043D77561F87B90700872028 /* SizeRateFitTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043D77541F87B90700872028 /* SizeRateFitTableViewCell.xib */; };
+		043D77591F87B97100872028 /* OtherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D77571F87B97100872028 /* OtherTableViewCell.swift */; };
+		043D775A1F87B97100872028 /* OtherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043D77581F87B97100872028 /* OtherTableViewCell.xib */; };
 		04555C611F7F533100CD719E /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04555C601F7F533000CD719E /* Shop.swift */; };
 		04555C631F7F6A6400CD719E /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04555C621F7F6A6400CD719E /* ShopViewModel.swift */; };
 		04682E5A1F7A494500D62670 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04682E591F7A494500D62670 /* ContainerViewController.swift */; };
@@ -66,6 +74,14 @@
 /* Begin PBXFileReference section */
 		043D77431F86339300872028 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		043D77491F863FBF00872028 /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
+		043D774B1F87B3FB00872028 /* ProductPictureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPictureTableViewCell.swift; sourceTree = "<group>"; };
+		043D774C1F87B3FB00872028 /* ProductPictureTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductPictureTableViewCell.xib; sourceTree = "<group>"; };
+		043D774F1F87B42B00872028 /* ProductDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		043D77501F87B42B00872028 /* ProductDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		043D77531F87B90700872028 /* SizeRateFitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeRateFitTableViewCell.swift; sourceTree = "<group>"; };
+		043D77541F87B90700872028 /* SizeRateFitTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SizeRateFitTableViewCell.xib; sourceTree = "<group>"; };
+		043D77571F87B97100872028 /* OtherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherTableViewCell.swift; sourceTree = "<group>"; };
+		043D77581F87B97100872028 /* OtherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherTableViewCell.xib; sourceTree = "<group>"; };
 		04555C601F7F533000CD719E /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		04555C621F7F6A6400CD719E /* ShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
 		04682E591F7A494500D62670 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +156,14 @@
 			isa = PBXGroup;
 			children = (
 				043D77431F86339300872028 /* DetailViewController.swift */,
+				043D774B1F87B3FB00872028 /* ProductPictureTableViewCell.swift */,
+				043D774C1F87B3FB00872028 /* ProductPictureTableViewCell.xib */,
+				043D774F1F87B42B00872028 /* ProductDetailsTableViewCell.swift */,
+				043D77501F87B42B00872028 /* ProductDetailsTableViewCell.xib */,
+				043D77531F87B90700872028 /* SizeRateFitTableViewCell.swift */,
+				043D77541F87B90700872028 /* SizeRateFitTableViewCell.xib */,
+				043D77571F87B97100872028 /* OtherTableViewCell.swift */,
+				043D77581F87B97100872028 /* OtherTableViewCell.xib */,
 			);
 			name = Detail;
 			path = "New Group";
@@ -354,11 +378,15 @@
 			files = (
 				04682E941F7B8FAC00D62670 /* SmallPhotoCollectionViewCell.xib in Resources */,
 				04682E901F7B8ACE00D62670 /* TabCollectionViewCell.xib in Resources */,
+				043D77521F87B42B00872028 /* ProductDetailsTableViewCell.xib in Resources */,
 				04682EC11F7CF02700D62670 /* FullPhotoCollectionViewCell.xib in Resources */,
 				04E9F27C1F7E25AA00F08304 /* SellerTableViewCell.xib in Resources */,
 				04E6F3311F7A0EA70066573B /* LaunchScreen.storyboard in Resources */,
+				043D775A1F87B97100872028 /* OtherTableViewCell.xib in Resources */,
 				04E6F32E1F7A0EA70066573B /* Assets.xcassets in Resources */,
+				043D77561F87B90700872028 /* SizeRateFitTableViewCell.xib in Resources */,
 				04E6F32C1F7A0EA70066573B /* Main.storyboard in Resources */,
+				043D774E1F87B3FB00872028 /* ProductPictureTableViewCell.xib in Resources */,
 				04E9F2841F7E287C00F08304 /* ShipmentTableViewCell.xib in Resources */,
 				04E9F2801F7E27FD00F08304 /* ProductTableViewCell.xib in Resources */,
 				04682E8C1F7B847100D62670 /* AvatarCollectionViewCell.xib in Resources */,
@@ -427,6 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04682EB91F7BAF6C00D62670 /* UITableViewExtensios.swift in Sources */,
+				043D77511F87B42B00872028 /* ProductDetailsTableViewCell.swift in Sources */,
 				04E6F3251F7A0EA70066573B /* RootViewController.swift in Sources */,
 				04682EB01F7BAF6B00D62670 /* Queue.swift in Sources */,
 				04682EAC1F7BAF6B00D62670 /* DateExtension.swift in Sources */,
@@ -449,7 +478,9 @@
 				04682EB61F7BAF6C00D62670 /* UIColorExtension.swift in Sources */,
 				04B4B94A1F834DBB00023A7D /* LogInViewController.swift in Sources */,
 				043D77441F86339300872028 /* DetailViewController.swift in Sources */,
+				043D77591F87B97100872028 /* OtherTableViewCell.swift in Sources */,
 				04555C631F7F6A6400CD719E /* ShopViewModel.swift in Sources */,
+				043D774D1F87B3FB00872028 /* ProductPictureTableViewCell.swift in Sources */,
 				04E6F3231F7A0EA70066573B /* AppDelegate.swift in Sources */,
 				04682EB81F7BAF6C00D62670 /* UILabelExtension.swift in Sources */,
 				04682EBA1F7BAF6C00D62670 /* UIViewControllerExtension.swift in Sources */,
@@ -458,6 +489,7 @@
 				04B4B94C1F8386D000023A7D /* LogInViewModel.swift in Sources */,
 				04682EB51F7BAF6C00D62670 /* UICollectionViewExtension.swift in Sources */,
 				04682EAF1F7BAF6B00D62670 /* NumberExtension.swift in Sources */,
+				043D77551F87B90700872028 /* SizeRateFitTableViewCell.swift in Sources */,
 				04682E931F7B8FAC00D62670 /* SmallPhotoCollectionViewCell.swift in Sources */,
 				04E6F3391F7A3F9A0066573B /* MainViewController.swift in Sources */,
 				04682EA91F7BAF6B00D62670 /* ArrayExtension.swift in Sources */,
