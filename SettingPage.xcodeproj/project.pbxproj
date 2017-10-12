@@ -61,6 +61,7 @@
 		04E6F3391F7A3F9A0066573B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6F3381F7A3F990066573B /* MainViewController.swift */; };
 		04E6F33B1F7A3FCE0066573B /* Page1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6F33A1F7A3FCE0066573B /* Page1ViewController.swift */; };
 		04E6F33D1F7A3FD80066573B /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6F33C1F7A3FD80066573B /* Page2ViewController.swift */; };
+		04E852A01F8F42AB00016E13 /* DesignerMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E8529F1F8F42AB00016E13 /* DesignerMainViewController.swift */; };
 		04E9F2781F7E18E200F08304 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9F2771F7E18E200F08304 /* ShopViewController.swift */; };
 		04E9F27B1F7E25AA00F08304 /* SellerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9F2791F7E25AA00F08304 /* SellerTableViewCell.swift */; };
 		04E9F27C1F7E25AA00F08304 /* SellerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E9F27A1F7E25AA00F08304 /* SellerTableViewCell.xib */; };
@@ -128,6 +129,7 @@
 		04E6F3381F7A3F990066573B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		04E6F33A1F7A3FCE0066573B /* Page1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1ViewController.swift; sourceTree = "<group>"; };
 		04E6F33C1F7A3FD80066573B /* Page2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
+		04E8529F1F8F42AB00016E13 /* DesignerMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignerMainViewController.swift; sourceTree = "<group>"; };
 		04E9F2771F7E18E200F08304 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		04E9F2791F7E25AA00F08304 /* SellerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerTableViewCell.swift; sourceTree = "<group>"; };
 		04E9F27A1F7E25AA00F08304 /* SellerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SellerTableViewCell.xib; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 		04E6F3211F7A0EA70066573B /* SettingPage */ = {
 			isa = PBXGroup;
 			children = (
+				04E8529E1F8F425600016E13 /* DesignerMain */,
 				043D77421F8620A000872028 /* Detail */,
 				04B4B9461F83426E00023A7D /* LogIn */,
 				04E9F2761F7E169C00F08304 /* Shop */,
@@ -279,6 +282,14 @@
 				043D77491F863FBF00872028 /* CustomTabBarViewController.swift */,
 			);
 			path = SettingPage;
+			sourceTree = "<group>";
+		};
+		04E8529E1F8F425600016E13 /* DesignerMain */ = {
+			isa = PBXGroup;
+			children = (
+				04E8529F1F8F42AB00016E13 /* DesignerMainViewController.swift */,
+			);
+			path = DesignerMain;
 			sourceTree = "<group>";
 		};
 		04E9F2761F7E169C00F08304 /* Shop */ = {
@@ -486,6 +497,7 @@
 				04682EBA1F7BAF6C00D62670 /* UIViewControllerExtension.swift in Sources */,
 				04682EC01F7CF02700D62670 /* FullPhotoCollectionViewCell.swift in Sources */,
 				04682E8F1F7B8ACE00D62670 /* TabCollectionViewCell.swift in Sources */,
+				04E852A01F8F42AB00016E13 /* DesignerMainViewController.swift in Sources */,
 				04B4B94C1F8386D000023A7D /* LogInViewModel.swift in Sources */,
 				04682EB51F7BAF6C00D62670 /* UICollectionViewExtension.swift in Sources */,
 				04682EAF1F7BAF6B00D62670 /* NumberExtension.swift in Sources */,

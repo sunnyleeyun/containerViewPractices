@@ -24,8 +24,8 @@ class CustomTabBarViewController: UITabBarController {
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(true)
-    let tab1 = DetailViewController()
     
+    let tab1 = DesignerMainViewController()
     let tab1BarItem = UITabBarItem(title: "Tab 1", image: UIImage(named: ""), selectedImage: UIImage(named: ""))
     
     tab1.tabBarItem = tab1BarItem
